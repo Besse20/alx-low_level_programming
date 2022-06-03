@@ -1,4 +1,4 @@
-0.This program will compute weather the given number is positive or negative.
+0;10;1c0.This program will compute weather the given number is positive or negative.
 1.if the last digit of n is greater than 5: the string and is greater than 5
 if the last digit of n is 0: the string and is 0
 if the last digit of n is less than 6 and not 0: the string and is less than 6 and not 0
@@ -6,4 +6,5 @@ if the last digit of n is less than 6 and not 0: the string and is less than 6 a
 3. a program that prints the alphabet in lowercase, and then in uppercase, followed by a new line.
 4. a program that prints the alphabet in lowercase, followed by a new line.
 5.a program that prints all single digit numbers of base 10 starting from 0.
-6.
+6.a program that prints all single digit numbers of base 10 starting from 0.
+7.
