@@ -5,4 +5,5 @@ if the last digit of n is less than 6 and not 0: the string and is less than 6 a
 2.a program that prints the alphabet in lowercase, followed by a new line.
 3. a program that prints the alphabet in lowercase, and then in uppercase, followed by a new line.
 4. a program that prints the alphabet in lowercase, followed by a new line.
-5.
+5.a program that prints all single digit numbers of base 10 starting from 0.
+6.
