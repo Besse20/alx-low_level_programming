@@ -7,4 +7,5 @@ if the last digit of n is less than 6 and not 0: the string and is less than 6 a
 4. a program that prints the alphabet in lowercase, followed by a new line.
 5.a program that prints all single digit numbers of base 10 starting from 0.
 6.a program that prints all single digit numbers of base 10 starting from 0.
-7.
+7.a program that prints the lowercase alphabet in reverse, followed by a new line.
+8.
