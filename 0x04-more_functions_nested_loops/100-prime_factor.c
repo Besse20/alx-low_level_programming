@@ -1,38 +1,24 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * print_number - prints a number with _putchar
- * @n: Number to print
+ * main -  checks for checks for a digit (0 through 9).
  *
- * Return: 0
+ * Return: Always 0.
  */
-void print_number(int n)
+int main(void)
 {
-int ten, i, neg;
-unsigned int digit, digit2;
+long x, y;
 
-ten = 1;
-if (n < 0)
+x = 612852475143;
+
+for (y = 2; x > y; y++)
 {
-n = n * -1;
-neg = 1;
-}
-digit = n;
-digit2 = n;
-while (digit >= 10)
+while (x % y == 0)
 {
-digit = digit / 10;
-ten = ten * 10;
+x = x / y;
 }
-if (neg == 1)
-{
-_putchar('-');
 }
-_putchar('0' + (digit2 / ten));
-i = ten / 10;
-while (i >= 1)
-{
-_putchar('0' + (digit2 / i) % 10);
-i = i / 10;
-}
+printf("%lu", y);
+putchar('\n');
+return (0);
 }
