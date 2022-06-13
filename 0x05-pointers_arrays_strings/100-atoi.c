@@ -12,7 +12,7 @@ int i = 0, sign = 1;
 unsigned int num = 0;
 while (s[i] != '\0')
 {
-if ((s[i] < '0' || s[i] > '9') && (s[i] == '-')
+if ((s[i] < '0' || s[i] > '9') && (s[i] == '-'))
 {
 sign = sign * -1;
 }
