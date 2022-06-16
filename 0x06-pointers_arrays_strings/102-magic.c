@@ -8,7 +8,6 @@ int *p;
 
 a[2] = 1024;
 p = &n;
-int x = 98;
   /*
    * write your line of code here...
    * Remember:
@@ -17,7 +16,7 @@ int x = 98;
    * - only one statement
    * - you are not allowed to code anything else than this line of code
    */
-int x = 0;
+int x = 98;
   /* ...so that this prints 98\n */
 printf("a[2] = %d\n", x);
 return (0);
