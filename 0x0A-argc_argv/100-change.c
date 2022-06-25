@@ -33,7 +33,8 @@ return (1);
 coins = atoi(argv[i]);
 for (a = 0; a < 5; a++)
 {
-while (coins >= cents[a]){
+while (coins >= cents[a])
+{
 coins -= cents[a];
 change += 1;
 }
