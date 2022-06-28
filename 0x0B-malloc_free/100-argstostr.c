@@ -1,50 +1,46 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
 
 /**
- * argstostr - function that concatenates all the arguments of your program.
- *
- *
- * @ac: ARGC
- * @av: ARGV
- *
- * Return: Pointer
- */
+* argstostr - concatenates all the arguments of your program
+* @ac: argument count in main
+* @av: arguments passed to main
+*
+* Return: Pointer
+*/
 char *argstostr(int ac, char **av)
 {
-int i = 0, j, longitud = 0, l, k;
-char *string;
+char *s;
+int l, lt, i, j, k;
 
-if (ac == 0 || av == '\0')
-return (NULL);
-
+if (ac == 0 || av == NULL)
+return (0);
+l = 0, k = 0;
 for (i = 0; i < ac; i++)
 {
-j = 0;
-while (av[i][j] != '\0')
-{
-j++;
+lt = 0;
+while (av[i][lt])
+lt++;
+l += lt + 1;
 }
-longitud  +=  j + 1;
-}
-string = malloc(sizeof(char) * (longitud + 1));
+s = malloc((l + 1) * sizeof(char));
 
-if (string == NULL)
-{
-return (NULL);
-}
-longitud = 0;
-for (k = 0; k < ac; k++)
-{
-for (l = 0; av[k][l] != '\0'; l++)
-{
-*(string + longitud) = av[k][l];
-longitud++;
-}
-*(string + longitud) = '\n';
-longitud++;
-}
+if (s == 0)
+return (0);
 
-return (string);
+for (j = 0; j < ac; j++)
+{
+lt = 0;
+while (av[j][lt])
+{
+*(s + k) = av[j][lt];
+k++;
+lt++;
+}
+*(s + k) = '\n';
+k++;
+}
+*(s + k) = '\0';
+
+return (s);
 }
