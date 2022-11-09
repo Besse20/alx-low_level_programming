@@ -1,0 +1,7 @@
+# This is a Makefile
+all: program
+
+# execute the program
+
+program: main.c school.c
+	gcc main.c school.c -o school
